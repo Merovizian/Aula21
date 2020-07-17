@@ -10,7 +10,7 @@ def fatorial (num = 1 , show = False):
     # inicia-se com um para poder multiplicar com os demais numeros fatoriais
     numero = 1
     # condicional para saber se mostra ou não os calculos
-    if show == True:
+    if show:
         # loop para printar na tela os valores e realizar os calculos
         for a in range (num, 1, -1):
             print(f'{a} x ',end='')
@@ -25,7 +25,7 @@ def fatorial (num = 1 , show = False):
             numero *= a
         return numero
 
-# Função principal
+# Programa principal
 print(f"\033[;1m{'Desafio 102 - Fatorial com opção de mostrar calculos':*^70}\033[m")
 
 print(fatorial(5))
